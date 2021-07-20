@@ -1,14 +1,14 @@
 <div class="m-2">
     <h2>Event à la une</h2>
-    <p-card header={{event.name}} subheader="date: {{event.startDate}} {{event.endDate}}" [style]="{width: '400px'}" styleClass="p-card-shadow">
+    <p-card header={{list.name}} subheader="date: {{list.startDate}} {{list.endDate}}" [style]="{width: '400px'}" styleClass="p-card-shadow">
         <ng-template pTemplate="header">
             <img alt="event" src="../assets/environnement-bg.jpg">
         </ng-template>
-        <p> adress: {{event.adress}} </p>
-        <p> nb max participants: {{event.maxParticipants}} </p>
-        <p class="nbline"> {{event.description}} </p>
+        <p> adress: {{list.adress}} </p>
+        <p> nb max participants: {{list.maxParticipants}} </p>
+        <p class="nbline"> {{list.description}} </p>
         <ng-template pTemplate="footer">
-            <p> {{event.organizer}} </p>
+            <p> {{list.organizer}} </p>
         </ng-template>
     </p-card>
 </div>
