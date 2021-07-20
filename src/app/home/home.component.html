@@ -1,16 +1,25 @@
 <div class="m-2">
     <h2>Event à la une</h2>
-    <p-card header={{list.name}} subheader="date: {{list.startDate}} {{list.endDate}}" [style]="{width: '400px'}" styleClass="p-card-shadow">
-        <ng-template pTemplate="header">
-            <img alt="event" src="../assets/environnement-bg.jpg">
-        </ng-template>
-        <p> adress: {{list.adress}} </p>
-        <p> nb max participants: {{list.maxParticipants}} </p>
-        <p class="nbline"> {{list.description}} </p>
-        <ng-template pTemplate="footer">
-            <p> {{list.organizer}} </p>
-        </ng-template>
-    </p-card>
+    <div style="width: 400px;">
+        <p-dataView [value]="list">
+            <ng-template let-list pTemplate="listItem" class="d-flex flex-row">
+                <a routerLink="/event">
+                    <p-card header={{list.name}} subheader="date: {{list.startDate}} {{list.endDate}}"
+                        [style]="{width: '400px'}" styleClass="p-card-shadow">
+                        <ng-template pTemplate="header">
+                            <img alt="event" src="../assets/environnement-bg.jpg">
+                        </ng-template>
+                        <p> adress: {{list.adress}} </p>
+                        <p> nb max participants: {{list.maxParticipants}} </p>
+                        <p class="nbline"> {{list.description}} </p>
+                        <ng-template pTemplate="footer">
+                            <p> {{list.organizer}} </p>
+                        </ng-template>
+                    </p-card>
+                </a>
+            </ng-template>
+        </p-dataView>
+    </div>
 </div>
 
 <div class="m-2">
@@ -27,11 +36,11 @@
     <div class="p-fluid p-formgrid p-grid">
         <div class="p-field">
             <label for="name">Nom de l'event</label>
-            <input id="name" type="text" pInputText> 
+            <input id="name" type="text" pInputText>
         </div>
         <div class="p-field">
             <label for="adress">Adresse de l'event</label>
-            <input id="adress" type="text" pInputText> 
+            <input id="adress" type="text" pInputText>
         </div>
         <div class="p-field">
             <label for="date">Durée de l'event</label>
@@ -39,9 +48,9 @@
         </div>
         <div class="p-field">
             <label for="nbMax">Nombre Max de participants de l'event</label>
-            <input id="nbMax" type="text" pInputText> 
+            <input id="nbMax" type="text" pInputText>
         </div>
-            <label for="description">Description de l'event</label>
-            <textarea id="description" type="text" rows="4" pInputTextarea autoResize="autoResize"></textarea>
+        <label for="description">Description de l'event</label>
+        <textarea id="description" type="text" rows="4" pInputTextarea autoResize="autoResize"></textarea>
     </div>
 </div>

@@ -4,7 +4,8 @@
         <p-dataView [value]="list">
             <ng-template let-list pTemplate="listItem" class="d-flex flex-row">
                 <a routerLink="/event">
-                    <p-card header={{list.name}} subheader="date: {{list.startDate}} {{list.endDate}}" [style]="{width: '400px'}" styleClass="p-card-shadow">
+                    <p-card header={{list.name}} subheader="date: {{list.startDate}} {{list.endDate}}"
+                        [style]="{width: '400px'}" styleClass="p-card-shadow">
                         <ng-template pTemplate="header">
                             <img alt="event" src="../assets/environnement-bg.jpg">
                         </ng-template>
