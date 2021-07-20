@@ -1,0 +1,20 @@
+<div class="m-3">
+    <h1>list event</h1>
+    <div style="width: 400px;" class="d-inline-flex justify-content-between">
+        <p-dataView [value]="list">
+            <ng-template let-list pTemplate="listItem">
+                <p-card header={{list.name}} subheader="date: {{list.startDate}} {{list.endDate}}" [style]="{width: '400px'}" styleClass="p-card-shadow">
+                    <ng-template pTemplate="header">
+                        <img alt="event" src="../assets/environnement-bg.jpg">
+                    </ng-template>
+                    <p> adress: {{list.adress}} </p>
+                    <p> nb max participants: {{list.maxParticipants}} </p>
+                    <p class="nbline"> {{list.description}} </p>
+                    <ng-template pTemplate="footer">
+                        <p> {{list.organizer}} </p>
+                    </ng-template>
+                </p-card>
+            </ng-template>
+        </p-dataView>
+    </div>
+</div>
