@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<div class="show">
+  <div class="card-header green">
+    Connectez-vous avec votre adresse email !
+  </div>
+  <div class="mb-3">
+    <label for="Email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="Email" [formControl]="email" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" class="form-control" [formControl]="password" id="Password">
+  </div>
+  <div class="mb-3 form-check">
+    <p>Pas encore membre ? <a routerLink="/inscription">Créer un compte</a></p>
+  </div>
+  <button type="submit" class=" text-center btn basic-btn">Se connecter</button>
+</div>
+<app-footer></app-footer>

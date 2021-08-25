@@ -1,0 +1,49 @@
+.cut {
+  border: 3px solid #a6d127;
+  width: 45.125rem;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+img {
+  height: auto;
+}
+/*.flow {
+  display: flex;
+}*/
+
+.container-article{
+  margin: 4rem 4rem;
+}
+.present-paragraph-bottle {
+  margin-left: 42%;
+  margin-right: 15%;
+}
+
+.present-paragraph-stripe {
+  margin-left: 20%;
+  margin-right: 50%;
+}
+.present-paragraph-book {
+  margin-left: 45%;
+  margin-right: 15%;
+}
+
+.bottle {
+  margin-left: 23%;
+  float: left;
+  max-width: 15%;
+}
+
+.stripe {
+  margin-right: 25%;
+  float: right;
+  max-width: 20%;
+}
+
+.book {
+  margin-left: 17%;
+  float: left;
+  max-width: 25%;
+}

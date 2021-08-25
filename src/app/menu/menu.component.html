@@ -1,0 +1,26 @@
+<section class="banner">
+  <div class="placement">
+    <div class="paragraphe">
+      <h1 class="title">Découvrez un nouveau moyen de rendre le monde meilleur :</h1>
+      <p class="text-intro">Bienvenue sur Help And Save !<br>Recherche des évènements a proximité<br> contribue a sauver le monde avec un soutient humain ou financier</p>
+    </div>
+    <div class="search-input">
+      <input class="form-control" placeholder="Taper le nom d'un évenement...">
+      <button class="search-btn">Recherche</button>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="center-delimit">
+    <p>Découvrez nos divers évènement a proximité</p>
+    <p>il y a mille et une façon de sauver le monde, choississez celle qui vous convient</p>
+    <hr class="delimit">
+  </div>
+  <p-carousel [value]="photos" [numVisible]="5" [numScroll]="1" [circular]="true" [autoplayInterval]="3000">
+    <ng-template let-photo pTemplate="item">
+      <div class="p-mb-3">
+        <img style="top: 0;left: 0;background-color: rgba(0,0,0,.2);z-index: 5;" src={{photo.src}}>
+      </div>
+    </ng-template>
+  </p-carousel>
+</section>

@@ -1,0 +1,22 @@
+.show {
+  background-color: #fff;
+  border: 1px solid transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 4px rgb(128 128 128 / 20%);
+  box-shadow: 0 0 4px rgb(128 128 128 / 20%);
+  margin: 4rem 39rem;
+}
+.basic-btn {
+  background-color: #a6d127;
+  background: #a6d127;
+  border: 1px solid #a6d127;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.green {
+  background-color: #a6d127;
+  background: #a6d127;
+  color: #fff;
+}
